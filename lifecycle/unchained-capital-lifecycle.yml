@@ -1,0 +1,41 @@
+generated: '2026-08-02'
+method: probed
+source: https://www.unchained.com/
+description: >-
+  Lifecycle posture for Unchained. There is no public API, therefore no API
+  versioning policy, no deprecation policy, no Sunset/Deprecation header support
+  and no published API SLA. A status page host exists but is not public. Recorded
+  as observed negatives so a later round can detect any change.
+versioning:
+  scheme: none-published
+  current: null
+  docs: null
+  note: No public API to version.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No RFC 8594 Sunset/Deprecation contract published. Product-level deprecations
+    are announced in the "Product news" blog category
+    (https://www.unchained.com/blog-category/product-updates). Note the
+    unchained-bitcoin and unchained-wallets npm packages ARE formally deprecated
+    on npm and their GitHub repos archived, superseded by @caravan/*.
+sla:
+  url: null
+  uptime_target: null
+status_page:
+  url: https://status.unchained.com/
+  public: false
+  observed: >-
+    Better Stack status page (DNS CNAME statuspage.betteruptime.com). HTTPS GET
+    follows a redirect to https://status.unchained.com/sso and renders a sign-in
+    page — the status page is authentication-gated, so no StatusPage pointer is
+    wired into apis.yml.
+  http_status: 200
+  final_url: https://status.unchained.com/sso
+deprecated_operations: []
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+    - https://status.unchained.com/
+    - https://www.unchained.com/blog-category/product-updates

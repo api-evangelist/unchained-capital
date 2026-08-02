@@ -1,0 +1,113 @@
+generated: '2026-08-02'
+method: searched
+source: https://github.com/unchained-capital
+description: >-
+  First-party open-source libraries and tools published by Unchained Capital.
+  Verified against the public registries (registry.npmjs.org, pypi.org) and the
+  unchained-capital GitHub organization on 2026-08-02. IMPORTANT: these are
+  bitcoin/multisig developer libraries, NOT client SDKs for an Unchained service
+  API — Unchained publishes no public REST or GraphQL API, so no `SDKs` pointer is
+  wired for this artifact. The unchained-bitcoin and unchained-wallets packages are
+  deprecated on npm; active development moved to the Caravan monorepo, which now
+  lives in the community caravan-bitcoin organization (originated at Unchained).
+packages:
+  - language: javascript
+    registry: npm
+    name: unchained-bitcoin
+    url: https://www.npmjs.com/package/unchained-bitcoin
+    source: https://github.com/unchained-capital/unchained-bitcoin
+    install: npm install unchained-bitcoin
+    version: 1.2.1
+    official: true
+    status: deprecated
+    note: >-
+      Bitcoin utilities library (validation, HD wallets, block explorers, multisig)
+      built on bitcoinjs-lib. GitHub repo archived; superseded by @caravan/bitcoin.
+    docs: https://unchained-capital.github.io/unchained-bitcoin/
+  - language: javascript
+    registry: npm
+    name: unchained-wallets
+    url: https://www.npmjs.com/package/unchained-wallets
+    source: https://github.com/unchained-capital/unchained-wallets
+    install: npm install unchained-wallets
+    version: 1.0.4
+    official: true
+    status: deprecated
+    note: >-
+      Shared JavaScript API across multiple bitcoin hardware wallets (Trezor,
+      Ledger, Coldcard). GitHub repo archived; superseded by @caravan/wallets.
+  - language: python
+    registry: pypi
+    name: hermit
+    url: https://pypi.org/project/hermit/
+    source: https://github.com/unchained-capital/hermit
+    install: pip install hermit
+    version: 0.1.12
+    official: true
+    status: deprecated
+    note: >-
+      Command-line, SLIP-39 sharded bitcoin wallet designed for air-gapped
+      deployments. Authored by "Unchained Capital Engineering". Repo archived.
+  - language: javascript
+    registry: npm
+    name: "@caravan/bitcoin"
+    url: https://www.npmjs.com/package/@caravan/bitcoin
+    source: https://github.com/caravan-bitcoin/caravan
+    install: npm install @caravan/bitcoin
+    version: 0.4.5
+    official: false
+    note: >-
+      Successor to unchained-bitcoin. Package description still reads "Unchained
+      Capital's bitcoin utilities library" but the repository is now the community
+      caravan-bitcoin organization, so this is recorded as originated-at-Unchained
+      rather than first-party-maintained.
+  - language: javascript
+    registry: npm
+    name: "@caravan/wallets"
+    url: https://www.npmjs.com/package/@caravan/wallets
+    source: https://github.com/caravan-bitcoin/caravan
+    install: npm install @caravan/wallets
+    version: 0.10.1
+    official: false
+    note: Successor to unchained-wallets; maintained in the caravan-bitcoin organization.
+  - language: javascript
+    registry: npm
+    name: "@caravan/multisig"
+    url: https://www.npmjs.com/package/@caravan/multisig
+    source: https://github.com/caravan-bitcoin/caravan
+    install: npm install @caravan/multisig
+    version: 1.0.2
+    official: false
+  - language: javascript
+    registry: npm
+    name: "@caravan/psbt"
+    url: https://www.npmjs.com/package/@caravan/psbt
+    source: https://github.com/caravan-bitcoin/caravan
+    install: npm install @caravan/psbt
+    version: 2.1.0
+    official: false
+  - language: javascript
+    registry: npm
+    name: "@caravan/descriptors"
+    url: https://www.npmjs.com/package/@caravan/descriptors
+    source: https://github.com/caravan-bitcoin/caravan
+    install: npm install @caravan/descriptors
+    version: 0.2.0
+    official: false
+    note: Successor to unchained-capital/bitcoin-descriptors (archived).
+registries_probed:
+  - {registry: npm, status: found}
+  - {registry: pypi, status: found}
+  - {registry: rubygems, status: none}
+  - {registry: packagist, status: none}
+  - {registry: nuget, status: none}
+  - {registry: crates.io, status: none}
+  - {registry: maven-central, status: none}
+  - {registry: pkg.go.dev, status: none}
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+    - https://api.github.com/orgs/unchained-capital/repos
+    - https://registry.npmjs.org/unchained-bitcoin
+    - https://registry.npmjs.org/unchained-wallets
+    - https://pypi.org/pypi/hermit/json

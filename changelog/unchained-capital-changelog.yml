@@ -1,0 +1,65 @@
+generated: '2026-08-02'
+method: searched
+source: https://www.unchained.com/blog-category/product-updates
+docs: https://www.unchained.com/blog-category/product-updates
+description: >-
+  Unchained publishes no API changelog — there is no public API. Its product
+  change surface is the "Product news" blog category, a dated stream of client
+  application and product releases. This artifact captures the recent window;
+  the live category page is the source of truth. Dates are taken verbatim from
+  each post's schema.org datePublished.
+versioning:
+  scheme: none-published
+  note: >-
+    No API versioning scheme, no version header, no dated release train — no
+    public API exists to version. The client application carries an internal
+    build version (meta name="trefoil-web-version" on my.unchained.com) that is
+    not documented publicly.
+entries:
+  - date: '2026-07-21'
+    title: Refer a friend to Unchained
+    url: https://www.unchained.com/blog/refer-a-friend-to-unchained
+  - date: '2026-07-02'
+    title: Introducing the Inheritance Boot Camp
+    url: https://www.unchained.com/blog/introducing-inheritance-boot-camp
+  - date: '2026-04-20'
+    title: Introducing Premium Service Suites
+    url: https://www.unchained.com/blog/introducing-premium-service-suites
+  - date: '2026-04-07'
+    title: Dark mode is here
+    url: https://www.unchained.com/blog/dark-mode-is-here
+  - date: '2026-03-11'
+    title: Blockstream Jade and BitBox02 now compatible with Unchained vaults
+    url: https://www.unchained.com/blog/blockstream-jade-and-bitbox02-now-compatible-with-unchained-vaults
+  - date: '2026-03-05'
+    title: Broadcast bitcoin instantly from mobile
+    url: https://www.unchained.com/blog/broadcast-bitcoin-instantly-from-mobile
+  - date: '2026-01-21'
+    title: Mobile vault spend — streamline transactions directly from your iOS app
+    url: https://www.unchained.com/blog/mobile-vault-spend-streamline-transactions-directly-from-your-ios-app
+  - date: '2025-12-11'
+    title: 'Flexible quorums: more ways to tailor your bitcoin custody'
+    url: https://www.unchained.com/blog/flexible-quorums-more-ways-to-tailor-your-bitcoin-custody
+  - date: '2025-11-20'
+    title: Unchained Android app — bringing bitcoin finance to everyone
+    url: https://www.unchained.com/blog/unchained-android-app-bringing-bitcoin-finance-to-everyone
+  - date: '2025-10-23'
+    title: Add beneficiaries to your personal vaults
+    url: https://www.unchained.com/blog/add-beneficiaries-to-your-personal-vaults
+  - date: '2025-01-09'
+    title: Add passkeys to your account for enhanced security
+    url: https://www.unchained.com/blog/add-passkeys-to-your-account-for-enhanced-security
+  - date: '2024-10-18'
+    title: Confirm deposit addresses via email
+    url: https://www.unchained.com/blog/confirm-deposit-addresses-via-email
+  - date: '2024-09-26'
+    title: Approve business transactions from your phone
+    url: https://www.unchained.com/blog/approve-business-transactions-from-your-phone
+  - date: '2024-09-12'
+    title: Bitcoin donor-advised funds, powered by Unchained Connections
+    url: https://www.unchained.com/blog/bitcoin-donor-advised-funds-powered-by-unchained-connections
+x-evidence:
+  fetched: '2026-08-02'
+  url: https://www.unchained.com/blog-category/product-updates
+  http_status: 200
+  dates_from: schema.org datePublished on each post

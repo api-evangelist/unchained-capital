@@ -1,0 +1,79 @@
+generated: '2026-08-02'
+method: searched
+source: https://www.unchained.com/legal-regulatory
+docs:
+  - https://www.unchained.com/legal-regulatory
+  - https://www.unchained.com/privacy-security
+description: >-
+  Unchained publishes no machine-readable API contract, so the usual API-side
+  conformance assertions (OAuth 2.0, OIDC, RFC 9457, JSON:API, pagination,
+  idempotency) cannot be derived — there is nothing to derive them from, and
+  none are asserted here. What Unchained DOES publish, in depth, is its
+  financial-regulatory posture: it operates as a financial institution under the
+  Bank Secrecy Act with state-by-state money transmitter licensing. Those are the
+  standards captured below.
+standards:
+  - id: bsa-aml-kyc
+    name: Bank Secrecy Act / AML / KYC
+    conforms: true
+    evidence: >-
+      "Unchained is a financial institution as defined by the Bank Secrecy Act (BSA).
+      As a financial institution, we are required to follow Anti-Money Laundering (AML)
+      and Know Your Customer (KYC) practices." — https://www.unchained.com/privacy-security
+  - id: nmls-registration
+    name: NMLS registration
+    conforms: true
+    evidence: >-
+      Published NMLS IDs — Unchained Capital, Inc. 1900773; Unchained Trading, LLC
+      2273761; B&C Lending 2656661; Bitcoin Collateral Services LLC 2423070.
+    source: https://www.unchained.com/legal-regulatory
+  - id: state-money-transmitter-licensing
+    name: US state money transmitter / money services licensing
+    conforms: true
+    evidence: >-
+      Unchained Trading, LLC holds money transmitter (or equivalent) licenses in
+      30+ US states and territories, each license number published on the
+      legal & regulatory page — e.g. Alabama #894, Arizona #MT-1041292,
+      Florida #FT230000395, Illinois #MT.0000440, Nevada #MT11218,
+      Washington #550-MT-145597, Puerto Rico #TM-151.
+    source: https://www.unchained.com/legal-regulatory
+  - id: california-financing-law
+    name: California Financing Law License
+    conforms: true
+    evidence: 'Unchained Capital, Inc. Financing Law License #60DBO-78867'
+    source: https://www.unchained.com/legal-regulatory
+  - id: louisiana-virtual-currency-business-activity
+    name: Louisiana Virtual Currency Business Activity License
+    conforms: true
+    evidence: 'Virtual Currency Business Activity License #2273761'
+    source: https://www.unchained.com/legal-regulatory
+  - id: ccpa
+    name: California Consumer Privacy Act (opt-out / do-not-sell)
+    conforms: true
+    evidence: >-
+      Publishes a "California do not sell information" page and an opt-out page.
+    source: https://www.unchained.com/california-do-not-sell-information
+  - id: oauth2
+    conforms: false
+    evidence: no public API and no published OAuth surface
+  - id: openid-connect
+    conforms: false
+    evidence: /.well-known/openid-configuration returns 404 on every Unchained host
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: no public API contract to assess
+  - id: rfc9116-security-txt
+    conforms: false
+    evidence: /.well-known/security.txt returns 404 on www.unchained.com and unchained.com
+  - id: soc2
+    conforms: unknown
+    evidence: no public trust center or SOC 2 attestation page found
+  - id: iso-27001
+    conforms: unknown
+    evidence: no public certification page found
+x-evidence:
+  fetched: '2026-08-02'
+  urls:
+    - https://www.unchained.com/legal-regulatory
+    - https://www.unchained.com/privacy-security
+  http_status: 200

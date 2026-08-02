@@ -1,0 +1,52 @@
+generated: '2026-08-02'
+method: probed
+source: https://www.unchained.com/
+description: >-
+  Probe record of the /.well-known/ discovery surface across every Unchained host.
+  No document was found: the marketing site (www.unchained.com) returns 404 for
+  every path, and the client application (my.unchained.com) is a single-page app
+  whose catch-all answers HTTP 200 with an HTML shell for EVERY path — including
+  /.well-known/agent-card.json, /openapi.json and /llms.txt — so those 200s are
+  false positives and are recorded as such. No WellKnown pointer is wired into
+  apis.yml, because no well-known document actually exists.
+hosts:
+  - host: https://www.unchained.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/openid-configuration, status: 404}
+      - {path: /.well-known/oauth-authorization-server, status: 404}
+      - {path: /.well-known/api-catalog, status: 404}
+      - {path: /.well-known/ai-plugin.json, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+      - {path: /.well-known/agent.json, status: 404}
+  - host: https://unchained.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+  - host: https://my.unchained.com
+    note: >-
+      SPA catch-all. Every probed path returned HTTP 200 with
+      content-type text/html and the application shell body
+      (<!doctype html>... "Unchained provides financial products for long-term
+      bitcoin owners."). Treated as NO document present.
+    documents:
+      - {path: /.well-known/security.txt, status: 200, valid: false, reason: html-spa-catch-all}
+      - {path: /.well-known/agent-card.json, status: 200, valid: false, reason: html-spa-catch-all}
+      - {path: /.well-known/agent.json, status: 200, valid: false, reason: html-spa-catch-all}
+      - {path: /.well-known/openid-configuration, status: 200, valid: false, reason: html-spa-catch-all}
+      - {path: /.well-known/oauth-authorization-server, status: 200, valid: false, reason: html-spa-catch-all}
+      - {path: /.well-known/api-catalog, status: 200, valid: false, reason: html-spa-catch-all}
+      - {path: /.well-known/ai-plugin.json, status: 200, valid: false, reason: html-spa-catch-all}
+  - host: https://help.unchained.com
+    documents:
+      - {path: /.well-known/security.txt, status: 404}
+      - {path: /.well-known/agent-card.json, status: 404}
+findings:
+  security_txt: false
+  openid_configuration: false
+  oauth_authorization_server: false
+  api_catalog: false
+  ai_plugin: false
+  agent_card: false
+x-evidence:
+  fetched: '2026-08-02'
+  method: HTTP GET with redirect following, content-type and body inspection
