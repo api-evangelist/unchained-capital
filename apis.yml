@@ -12,6 +12,17 @@ description: 'Unchained (Unchained Capital, Inc.) is an Austin, Texas bitcoin-na
   API; its public developer surface is a set of open-source bitcoin libraries (unchained-bitcoin,
   unchained-wallets, hermit, and the Caravan multisig coordinator, now maintained in the
   caravan-bitcoin organization) plus an llms.txt for AI agents.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/69b3f486fbd39248d38ef7da/69b7f0c8519a0659d860ca54_Unchained%20logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/unchained-capital/refs/heads/main/apis.yml
 x-type: company
