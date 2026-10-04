@@ -48,13 +48,13 @@ tags:
 - Company
 - Bitcoin
 - Cryptocurrency
-- Financial-Services
+- Financial Services
 - Custody
 - Wealth Management
 - Lending
 - Retirement
 - Trading
-- Open-Source
+- Open Source
 tags_raw:
 - Company
 - Bitcoin
@@ -66,6 +66,8 @@ tags_raw:
 - Retirement
 - Trading
 - Open Source
+- Financial-Services
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
